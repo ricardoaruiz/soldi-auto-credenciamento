@@ -1,0 +1,65 @@
+<ion-grid>
+  <ion-row>
+    <ion-col text-center>
+      
+      <ion-grid>
+        <ion-row>
+          <ion-col col4>
+            <button ion-button outline block large (click)=digitar(7);>7</button>
+          </ion-col>
+          <ion-col col4>
+            <button ion-button outline block large (click)=digitar(8);>8</button>
+          </ion-col>
+          <ion-col col4>
+            <button ion-button outline block large (click)=digitar(9);>9</button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col4>
+            <button ion-button outline block large (click)=digitar(4);>4</button>
+          </ion-col>
+          <ion-col col4>
+            <button ion-button outline block large (click)=digitar(5);>5</button>
+          </ion-col>
+          <ion-col col4>
+            <button ion-button outline block large (click)=digitar(6);>6</button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col4>
+            <button ion-button outline block large (click)=digitar(1);>1</button>
+          </ion-col>
+          <ion-col col4>
+            <button ion-button outline block large (click)=digitar(2);>2</button>
+          </ion-col>
+          <ion-col col4>
+            <button ion-button outline block large (click)=digitar(3);>3</button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col4>
+            <button ion-button icon-button icon-only outline block large color="danger" 
+              (click)=digitar(undefined);>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+          </ion-col>
+          <ion-col col4>
+            <button ion-button outline block large (click)=digitar(0);>0</button>
+          </ion-col>
+          <ion-col col4>
+            <button ion-button icon-button icon-only outline block large color="secondary" 
+              (click)=confirmar(); 
+              [disabled]="!validValue">
+              <ion-icon name="checkmark"></ion-icon>
+            </button>              
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>

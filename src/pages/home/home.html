@@ -1,0 +1,35 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding class="page-home">
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <img src="assets/imgs/soldi.gif">        
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <div class="valor-cpf">{{!cpf ? CPF : cpf | cpf}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col >
+        <ac-keyboard 
+          [value]="cpf" 
+          [minLength]="CPF_LENGTH"
+          [maxLength]="CPF_LENGTH"
+          (change)="updateCpf($event)" 
+          (confirm)="confirmar($event)">
+        </ac-keyboard>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,17 @@
+page-home {
+
+    .col {
+        padding: 0px 10px 10px 0px;
+
+        &:last-child {
+            padding: 0px 0px 10px 0px;    
+        }
+    }
+
+    .valor-cpf {
+        margin-top: 20px;
+        font-size: 4rem;
+        border: 1px solid gray;
+    }
+
+}

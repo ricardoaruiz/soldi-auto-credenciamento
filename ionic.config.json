@@ -1,0 +1,8 @@
+{
+  "name": "soldi-auto-credenciamento",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
